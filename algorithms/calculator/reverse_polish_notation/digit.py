@@ -14,15 +14,13 @@ class Digit(Element):
     """
 
     def __init__(self, digit_as_string: Union[float, str]):
-        print(digit_as_string)
-        self.digit = None
+        self.digit = float(digit_as_string)
 
     def __str__(self) -> str:
         """
-        Magic method to present an instance of this class as string
+        Magic method to present class as string
         """
+        return str(self.digit)
 
     def __eq__(self, other: 'Digit') -> bool:
-        """
-        Magic method to compare instances of Digit class
-        """
+        return self.digit == other.digit

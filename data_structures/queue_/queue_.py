@@ -1,5 +1,5 @@
 """
-Programming for linguists:(
+Programming for linguists :(
 
 Implementation of the data structure "Queue"
 """
